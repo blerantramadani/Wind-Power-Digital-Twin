@@ -1,17 +1,22 @@
-# Wind-Power-Digital-Twin
-# Physics-Informed Digital Twin for Wind Power Forecasting
+# Physics-Informed Digital Twin for LSTM-Based Wind Power Forecasting
 
-**Conference:** OSMSES 2026 (Karlsruhe, Germany)
-**Status:** Submitted for Review
+This repository contains the official implementation and validation framework for the paper: 
+**"Physics-Informed Digital Twin for Pre-Deployment Validation of LSTM-Based Wind Power Forecasting Models"** accepted for presentation at **OSMSES 2026** (Karlsruhe, Germany).
 
-## Overview
-This repository contains the source code for the "Digital Twin" validation framework. It includes a physics-based simulation engine that generates synthetic SCADA data for a 2.3 MW wind turbine, respecting aerodynamic constraints and atmospheric autocorrelation.
+## 🚀 Overview
+We introduce a verification layer that decouples algorithmic performance from SCADA data-quality issues. By utilizing a physics-based Digital Twin engine, we establish a "Synthetic Ground Truth" to validate LSTM architectures before they are deployed to real-world wind parks.
 
-## Repository Structure
-* `generate_data.py`: Physics Engine. Generates synthetic wind/power data using Random Walk logic.
-* `final_optimization.py`: AI Engine. Trains the LSTM network (TensorFlow/Keras).
-* `final_paper_graph.py`: Validation Engine. Generates the dynamic response graphs (Figure 3 in the paper).
+### Key Results
+- **nRMSE:** 2.25% (Normalized to 2.3 MW rated capacity)
+- **Model Architecture:** Stacked LSTM (128 units, 64 units)
+- **Input Vector:** Xt = [vt, Tt, Pt-1, Ht, Mt, mu_3h]
 
-## Usage
-1. Run `generate_data.py` to create the dataset.
-2. Run `final_paper_graph.py` to train the model and visualize results.
+## 📂 Repository Structure
+* `/src`: Contains the data generation engine and the forecasting pipeline.
+* `/data`: Contains the synthetic Bogdanci wind park dataset.
+* `/models`: Contains the pre-trained weights (.h5 file) for immediate result verification.
+
+## 🛠️ Installation & Usage
+1. Clone the repository and install dependencies:
+   ```bash
+   pip install -r requirements.txt
