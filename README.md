@@ -30,12 +30,11 @@ We introduce a verification layer that decouples algorithmic performance from SC
    
 2. **Run the unified forecasting pipeline:**
 This script will train the LSTM from scratch on your local machine and generate the Comparative Analysis (Figure 4) used in the paper:
-```bash
+
  python src/lstm_forecasting_pipeline.py
 
----
 
-## Key Results
+## Methodology
 - **Cyclic Time Encoding:** Preserving temporal periodicity for Hour ($H_t$) and Month ($M_t$) using sine and cosine transformations to ensure the model understands time-of-day and seasonal patterns.
 - **Physics-Based Constraints:** Piecewise cubic power curve modeling to ensure the synthetic ground truth respects the aerodynamic laws specific to the Bogdanci Wind Park.
 - **Signal Processing:** 3-hour rolling mean filters ($\mu_{3h}$) to attenuate high-frequency turbulence and improve LSTM convergence during training.
