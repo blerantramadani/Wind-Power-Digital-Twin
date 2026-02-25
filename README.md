@@ -36,4 +36,7 @@ This script will train the LSTM from scratch on your local machine and generate 
 
 python src/lstm_forecasting_pipeline.py
 
-## MethodologyThe pipeline implements:Cyclic Time Encoding: Preserving temporal periodicity for Hour ($H_t$) and Month ($M_t$).Physics-Based Constraints: Piecewise cubic power curve modeling.Signal Processing: 3-hour rolling mean filters ($\mu_{3h}$) to attenuate turbulence.
+## Methodology:
+The pipeline implements:Cyclic Time Encoding: Preserving temporal periodicity for Hour ($H_t$) and Month ($M_t$).
+Physics-Based Constraints: Piecewise cubic power curve modeling.
+Signal Processing: 3-hour rolling mean filters ($\mu_{3h}$) to attenuate turbulence.
