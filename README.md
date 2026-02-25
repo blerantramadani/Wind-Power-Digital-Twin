@@ -28,5 +28,8 @@ We introduce a verification layer that decouples algorithmic performance from SC
    ```bash
    pip install -r requirements.txt
 
+Run the unified forecasting pipeline:This script will train the LSTM from scratch on your local machine and generate the Comparative Analysis (Figure 4) used in the paper:Bashpython src/lstm_forecasting_pipeline.py
+📊 MethodologyThe pipeline implements several key physics-informed and signal-processing techniques to achieve high forecasting precision:Cyclic Time Encoding: Preserving temporal periodicity for Hour ($H_t$) and Month ($M_t$) using sine and cosine transformations to ensure the model understands time-of-day and seasonal patterns.Physics-Based Constraints: Piecewise cubic power curve modeling to ensure the synthetic ground truth respects the aerodynamic laws specific to the Bogdanci Wind Park.Signal Processing: 3-hour rolling mean filters ($\mu_{3h}$) to attenuate high-frequency turbulence and improve LSTM convergence during training.🎓 CitationIf you use this work or the Digital Twin engine in your research, please cite:Ramadani, B. (2026). Physics-Informed Digital Twin for Pre-Deployment Validation of LSTM-Based Wind Power Forecasting Models. OSMSES 2026, Karlsruhe, Germany.
+
 
 
