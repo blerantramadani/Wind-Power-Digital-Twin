@@ -39,6 +39,13 @@ This script will train the LSTM from scratch on your local machine and generate 
 - **Physics-Based Constraints:** Piecewise cubic power curve modeling to ensure the synthetic ground truth respects the aerodynamic laws specific to the Bogdanci Wind Park.
 - **Signal Processing:** 3-hour rolling mean filters ($\mu_{3h}$) to attenuate high-frequency turbulence and improve LSTM convergence during training.
 
+## Citation
+If you use this work or the Digital Twin engine in your research, please cite:
+
+**Ramadani, B. (2026).** Physics-Informed Digital Twin for Pre-Deployment Validation of LSTM-Based Wind Power Forecasting Models. OSMSES 2026, Karlsruhe, Germany.
+
+© 2026 Blerant Ramadani - Mother Teresa University in Skopje
+
 
 
 
