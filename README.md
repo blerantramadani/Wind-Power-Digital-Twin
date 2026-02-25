@@ -29,14 +29,4 @@ We introduce a verification layer that decouples algorithmic performance from SC
    pip install -r requirements.txt
 
 
-## Run the unified forecasting pipeline:
-This script will train the LSTM from scratch on your local machine and generate the Comparative Analysis (Figure 4):
 
-```Bash
-
-python src/lstm_forecasting_pipeline.py
-
-## Methodology:
-The pipeline implements:Cyclic Time Encoding: Preserving temporal periodicity for Hour ($H_t$) and Month ($M_t$).
-Physics-Based Constraints: Piecewise cubic power curve modeling.
-Signal Processing: 3-hour rolling mean filters ($\mu_{3h}$) to attenuate turbulence.
