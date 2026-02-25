@@ -18,7 +18,7 @@ We introduce a verification layer that decouples algorithmic performance from SC
 ## 📂 Repository Structure
 * **`/src`**: Contains the data generation engine and the unified forecasting pipeline.
 * **`/data`**: Contains the `Synthetic_Bogdanci_Data.csv` dataset.
-* **`/models`**: Contains the pre-trained weights (`bogdanci_lstm_model.h5`) for immediate result verification.
+* **`README.md`**: Project documentation and methodology.
 
 ---
 
