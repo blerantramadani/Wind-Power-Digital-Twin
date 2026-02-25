@@ -28,7 +28,6 @@ We introduce a verification layer that decouples algorithmic performance from SC
    ```bash
    pip install -r requirements.txt
 
-   -----
 
 ## Run the unified forecasting pipeline:
 This script will train the LSTM from scratch on your local machine and generate the Comparative Analysis (Figure 4):
