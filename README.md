@@ -20,3 +20,20 @@ We introduce a verification layer that decouples algorithmic performance from SC
 1. Clone the repository and install dependencies:
    ```bash
    pip install -r requirements.txt
+Run the unified forecasting pipeline to replicate the results and generate Figure 4:
+
+Bash
+
+python src/lstm_forecasting_pipeline.py
+📊 Methodology
+The pipeline implements:
+
+Cyclic Time Encoding: Preserving temporal periodicity for Hour and Month.
+
+Physics-Based Constraints: Piecewise cubic power curve modeling.
+
+Signal Processing: 3-hour rolling mean filters to attenuate high-frequency turbulence.
+
+🎓 Citation
+If you use this work in your research, please cite:
+Ramadani, B. (2026). Physics-Informed Digital Twin for Pre-Deployment Validation of LSTM-Based Wind Power Forecasting Models. OSMSES 2026.
